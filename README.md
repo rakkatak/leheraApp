@@ -23,13 +23,11 @@ Using the leheraApp.config() method, the $routeProvider is injected into our con
 
 Our application routes are defined as follows:
 
-    **when('/leheras'):** dThe leheras list view will be shown when the URL hash fragment is /leheras. To construct this view, Angular will use the lehera-list.html template and the LeheraListCtrl controller.
+**when('/leheras'):** The leheras list view will be shown when the URL hash fragment is /leheras. To construct this view, Angular will use the lehera-list.html template and the LeheraListCtrl controller.
 
-   ** when('/leheras/:leheraId'):** The lehera details view will be shown when the URL hash fragment matches '/lehera /:leheraId', where :leheraId is a variable part of the URL. To construct the lehera details view, Angular uses the lehera -detail.html template and the LeheraDetailCtrl controller. Note this controller is not used yet, but may in the future for displaying details about the raag, musician and time cycle.
+**when('/leheras/:leheraId'):** The lehera details view will be shown when the URL hash fragment matches '/lehera /:leheraId', where :leheraId is a variable part of the URL. To construct the lehera details view, Angular uses the lehera -detail.html template and the LeheraDetailCtrl controller. Note this controller is not used yet, but may in the future for displaying details about the raag, musician and time cycle.
 
-    **otherwise({redirectTo: '/leheras'}):** triggers a redirection to /leheras when the browser address doesn't match either of our routes.
-
-
+**otherwise({redirectTo: '/leheras'}):** triggers a redirection to /leheras when the browser address doesn't match either of our routes.
 
 # HowlerJS
 HowlerJS was leveraged for an audio API mainly because it uses the Web Audio API. Font Awesome was used to get a spinner icon to display as the music file is loading. See code [here](https://raw.githubusercontent.com/rakkatak/leheraApp/master/js/controllers.js)
